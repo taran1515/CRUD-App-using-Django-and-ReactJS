@@ -1,67 +1,60 @@
+# CRUD App using Django and ReactJS
 
-## Available Scripts
+This application helps the user to Create, Read, Update andd Delete the Student List. The app uses django for the server side and React for the client side of the application.
 
-In the project directory, you can run:
+<h3>Feautures:-</h3>
+<ul>
+<li>Single Page App</li>
+<li>Create Student Information</li>
+<li>Read Students Information</li>
+<li>Update Studen Informationt</li>
+<li>Delete Student Information</li>
+</ul>
 
-### `yarn start`
+Anyone can create, read, update and delete the list of Students. The app doesn't contain any authentication. This is just a Simple CRUD App. The main motive of this app is to learn how to call APIs in react and manage the state of the application to update the view.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Please follow the setup instrutions as follow in order to view the complete app we need to setup our backend and frontend separately so be carefull otherwise there could be problems.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# Backend-Setup 
 
-### `yarn test`
+clone the repositroy:-
+```
+https://github.com/taran1515/CRUD-App-using-Django-and-ReactJS.git
+```
+Create Virtual env for django-part:-
+```
+cd crud_backend
+virtualenv app
+```
+Activate Virtual env:-
+```
+app\scripts\activate
+```
+Install Dependencies:-
+```
+pip install -r requirements.txt
+```
+Make Migrations:-
+```
+./manage.py makemigrations
+./manage.py migrate
+```
+Start server for your REST-API:-
+```
+./manage.py runserver
+```
+# Frontend Setup:-
+Go to root and Open another terminal window
+```
+cd crud_frontend
+```
+Install Dependencies:-
+```
+npm install
+```
+Run Server:-
+```
+npm start
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+So apparently to server is running one is localhost:8000(clientside react) and second is localhost:8080(django-api) So to see live application open http://localhost:8000 in your browser window
